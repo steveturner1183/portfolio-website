@@ -1,0 +1,27 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons li {
+    margin-right: 1rem;
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+.nav-contact-button {
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    border-color: black;
+}

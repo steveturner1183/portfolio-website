@@ -1,0 +1,48 @@
+/* COLORS */
+:root {
+    --black: #1F271B;
+    --main-dt: #023047;
+    --secondary-dt: #7FC6A4;
+    --contrast-dt: #CCA43B;
+    --light-text-dt: #F2FDFF;
+
+    --blue: #2B70F9;
+    --purp: #6719CD;
+    --purp50: rgba(103, 25, 205, .5);
+    --purp0: rgba(103, 25, 205, 0);
+    --cont: #F6AE2D;
+}
+
+/* Fonts and Typography */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-family: "Open Sans";
+    color: var(--light-text-dt);
+    margin: 0 8% 0 8%;
+    background-color: var(--main-dt);
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {font-size: 3.052rem;  margin: 0;}
+    h2 {font-size: 2.441rem; margin: 0;}
+    h3 {font-size: 1.953rem; margin: 0; }
+    h4 {font-size: 1.563rem; margin: 0;}
+    h5 {font-size: 1.25rem; margin: 0;}
+    h6 {font-size: 1rem; margin: 0;}
+    p {font-size: 1rem; margin: 0;}
+}
+
+@media only screen and (min-width: 481px) {
+    h1 {font-size: 5.653rem; margin: 0;}
+    h2 {font-size: 3.998rem; margin: 0;}
+    h3 {font-size: 2.827rem; margin: 0; font-weight: 300;}
+    h4 {font-size: 1.999rem; margin: 0;}
+    h5 {font-size: 1.414rem; margin: 0;}
+    h6 {font-size: 1rem; margin: 0;}
+    p {font-size: 1rem; margin: 0;}
+}
+
+
+
+
+

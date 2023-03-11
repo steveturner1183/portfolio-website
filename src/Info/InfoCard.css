@@ -1,0 +1,25 @@
+.info-card {
+    background-color: var(--main-dt);
+    width: 25vw;
+    min-width: 300px;
+    text-align: center;
+    place-self: center;
+    border-radius: 25px;
+    border: 5px solid var(--secondary-dt);
+    filter: drop-shadow(-5px 0px 20px rgba(127, 198, 164, 0.5));
+}
+
+.info-card ul {
+    list-style: none;
+    margin-left: -2rem;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.info-card ul li{
+    margin-top: 5%;
+}
+
+.info-icon {
+    width: 5rem;
+}

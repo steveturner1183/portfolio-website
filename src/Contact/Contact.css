@@ -1,0 +1,23 @@
+.contact {
+    text-align: center;
+    background-color: var(--main-dt);
+    width: 100%;
+    color: var(--secondary-dt);
+    border: 5px solid var(--secondary-dt);
+}
+
+.form-input {
+    width: 25%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-dt);
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+    color: var(--light-text-dt);
+}
+
+.contact-form {
+
+}
