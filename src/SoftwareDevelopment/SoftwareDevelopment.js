@@ -1,16 +1,21 @@
 import "./SoftwareDevelopment.css";
-import lgProjectData from"./projectData.json";
+import { lgProjectData } from "./projectData.js";
 import Section from "../Layout/Section.js";
 
-import projImg1 from "../assets/images/lgProj1.PNG";
+import projVid1 from "../assets/videos/MLBreakout.mp4";
 import SectionHeader from "../Layout/SectionHeader";
 import LargeCard from "../Layout/LargeCard";
 import smallData from "./smallProjects.json";
 import SmallProjectCard from "./SmallProjectCard.js";
 import Button from "../Layout/Button.js";
 
+
+
+import un from "../assets/icons/languages/unity.svg";
+
+
 import { useState } from 'react';
-import { set } from "animejs";
+import LargeProject from "./LargeProject";
 
 export default function SoftwareDevelopment() {
     const [end, setEnd] = useState(6);
@@ -39,24 +44,11 @@ export default function SoftwareDevelopment() {
                     </p>
                 </SectionHeader>
                 {lgProjectData.map(data => (
-                <LargeCard 
-                    border={true}
-                    header={<h3>{data.title}</h3>}>
-                    <div>
-                        <img className="project-image" src={projImg1}></img>
-                    </div>
-                    <div className="project-text">
-                        <h5>Description</h5>
-                        <p>{data.description}</p>
-                        <h5>Technologies</h5>
-                        <p>{data.technologies}</p>
-                        <h5>Challenges and Lessons Learned</h5>
-                        <p>{data.challenges}</p>
-                        <h5>Github</h5>
-                    </div>
-                </LargeCard>
+                    <LargeProject data={data}></LargeProject>
                 ))}
                 <SectionHeader><h4>More Projects</h4></SectionHeader>
+                {/*
+                
                 <div className="sm-project-container">
                     {smallData.slice(0, end).map(data => (
                         <SmallProjectCard
@@ -66,6 +58,9 @@ export default function SoftwareDevelopment() {
                         ></SmallProjectCard>
                     ))}
                 </div>
+                */}
+
+                
 
                 {buttonDisplay && <Button name="Show More" action={adjustDisplay}></Button>}
                 {!buttonDisplay && <Button name="Show Less" action={adjustDisplay}></Button>}

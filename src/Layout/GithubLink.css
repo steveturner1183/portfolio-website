@@ -1,0 +1,16 @@
+.github-link {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: var(--light-text-dt);
+    border: solid var(--contrast-dt);
+    padding: .5rem 1rem .5rem .5rem;
+    border-radius: 25px;
+}
+
+.github-link p {
+    white-space: nowrap;
+
+}
+
