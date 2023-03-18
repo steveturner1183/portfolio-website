@@ -7,7 +7,7 @@ import LargeCard from "../Layout/LargeCard";
 export default function Hero() {
     return (
         
-            <Section>
+            <Section id="hero">
                 <LargeCard>
                     <div className="hero-text">
                         <h2>Hi, I'm Steve </h2>

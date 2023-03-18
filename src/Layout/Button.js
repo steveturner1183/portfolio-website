@@ -1,15 +1,17 @@
 import "./Button.css";
-import { motion } from "framer-motion";
 import ButtonAnimation from "../Animation/ButtonAnimation";
 
 export default function Button(props) {
+    function pageScroll(target) {
+        document.getElementById(props.target).scrollIntoView({behavior:"smooth"})
+    }
+
     return (
     <ButtonAnimation>
         <button 
             className={"button-" + props.class}
-            onClick={() => {document.getElementById(props.target).scrollIntoView({behavior:"smooth"})}}
+            onClick={props.target ? () => {pageScroll(props.target)} : () => {props.action()}}
         >{props.name}</button>
     </ButtonAnimation>
-
     )
 }

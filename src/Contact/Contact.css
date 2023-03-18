@@ -1,23 +1,30 @@
-.contact {
-    text-align: center;
-    background-color: var(--main-dt);
-    width: 100%;
-    color: var(--secondary-dt);
-
-}
-
 .form-input {
-    width: 25%;
-    padding: 10px 0;
+    width: 50%;
+    padding: 5px;
     background: none;
     border: none;
     border-bottom: 1px solid var(--secondary-dt);
-    text-transform: uppercase;
     outline: none;
     transition: border-color .2s;
-    color: var(--light-text-dt);
+    background-color: var(--light-text-dt);
+    display: block;
+    font-size: 1rem;
+    margin: 0 auto 2% auto; 
+    font-family: "Open Sans";
 }
 
-.contact-form {
+.contact-greeting {
+    align-self: start;
+}
 
+.verification-message {
+    text-align: center;
+}
+
+.verification-message h4 {
+    color: var(--secondary-dt);
+}
+
+.message-container {
+    height: 50vh;
 }

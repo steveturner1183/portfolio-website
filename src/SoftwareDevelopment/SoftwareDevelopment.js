@@ -26,15 +26,12 @@ export default function SoftwareDevelopment() {
 
     return (
             <Section id="software-development">
-                <SectionHeader>
-                    <h3>See What I Have Built</h3>
-
-                </SectionHeader>
-                {lgProjectData.map(data => (
-                    <LargeProject data={data}></LargeProject>
-                ))}
+                {/** Large Project Showcase **/}
+                <SectionHeader><h3>See What I Have Built</h3></SectionHeader>
+                {lgProjectData.map(data => (<LargeProject data={data}></LargeProject>))}
+                 
+                {/** Small Project Showcase **/}
                 <SectionHeader><h4>More Projects</h4></SectionHeader>
-                {
                 
                 <div className="sm-project-container">
                     {smProjectData.slice(0, end).map(data => (
@@ -45,14 +42,12 @@ export default function SoftwareDevelopment() {
                         ></SmallProjectCard>
                     ))}
                 </div>
-                }
-                <motion.div 
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.2 }}
-                >
-                    {buttonDisplay && <button className="sd-button" onClick={() => {adjustDisplay()}}>Show More</button>}
-                    {!buttonDisplay && <button className="sd-button" onClick={() => {adjustDisplay()}}>Show Less</button>}
-                </motion.div>
+
+                <Button
+                    name= {buttonDisplay ? "Show More" : "Show Less"}
+                    class= "fill" target= {false}  action= {adjustDisplay} 
+                ></Button>
+
             </Section>
     );
 }
