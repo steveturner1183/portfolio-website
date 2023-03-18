@@ -1,4 +1,4 @@
-.button {
+.button-fill {
     padding: 1rem 3rem;
     border-radius: 2rem;
     background-color: var(--contrast-dt);
@@ -8,4 +8,43 @@
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    cursor:pointer;
+}
+
+.button-no-fill-with-border:hover {
+    padding: .25rem 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--contrast-dt);
+    border: solid var(--contrast-dt);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--black);
+    cursor:pointer;
+}
+
+.button-no-fill-with-border {
+    padding: .25rem 1.5rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: solid var(--contrast-dt);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--light-text-dt);
+    cursor:pointer;
+}
+
+.button-no-fill {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--light-text-dt);
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor:pointer;
 }

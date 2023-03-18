@@ -3,7 +3,7 @@
     background-color: var(--main-dt);
     width: 100%;
     color: var(--secondary-dt);
-    border: 5px solid var(--secondary-dt);
+
 }
 
 .form-input {

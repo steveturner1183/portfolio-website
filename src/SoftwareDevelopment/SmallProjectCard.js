@@ -1,3 +1,4 @@
+import GithubLink from "../Layout/GithubLink";
 import "./SmallProjectCard.css";
 
 export default function Info(props) {
@@ -7,7 +8,12 @@ export default function Info(props) {
             <h6>Description</h6>
             <p>{props.description}</p>
             <h6>Technologies</h6>
-            <p>{props.technologies} </p>
+            <ul className="logo-set">
+                        {props.technologies.map(logo => (
+                            <img src={logo}></img>
+                        ))}
+            </ul>
+            <GithubLink></GithubLink>
         </div>
     )
 }

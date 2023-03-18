@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
-    column-gap: 20px;
     justify-items: center;
     align-items: center;
-    padding: 5%;
+
+    gap: 5%;
 }
 
 .show-more-btn {
@@ -13,4 +13,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.sd-button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background-color: var(--contrast-dt);
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor:pointer;
 }

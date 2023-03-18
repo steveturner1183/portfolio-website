@@ -1,6 +1,7 @@
 import "./ProjectManagement.css";
-import pmDiagram from "../assets/images/pm-diagram.png";
-import sdComparison from "../assets/images/sd-comparison.png";
+import pmDiagram from "../assets/charts/pm-diagram.png";
+import sdDiagram from "../assets/charts/sd-diagram.png";
+import skills from "../assets/charts/skills.png";
 import Section from "../Layout/Section";
 import SectionHeader from "../Layout/SectionHeader";
 import LargeCard from "../Layout/LargeCard";
@@ -8,55 +9,60 @@ import LargeCard from "../Layout/LargeCard";
 export default function ProjectManagement () {
     
     return (
-        <Section>
+        <Section id="project-management">
             <SectionHeader>
                 <h3>Learn What I Do</h3>
             </SectionHeader>
-            <LargeCard
-                border={false}
-                header={<h4>What Type of Projects Do I Manage?</h4>}>
-                <div>
-                    <p>I have spent 7 years as a construction manager for
-                        projects ranging in size from this to that. The diagram
-                        below depicts the typical coordination I do on a project
-                    </p>
-                </div>
-                <div className="chart">
-                    <img src={pmDiagram}></img>
-                </div>
-            </LargeCard>
 
-            <LargeCard
-                border={false}
-                header={<h4>Why Is This Relevant?</h4>}>
-                <div>
+                <div className="content-section">
+                    <h4>What type of projects do I manage?</h4>
                     <p>
-                        Abstracting away from construction maangement, the project Management
-                        process is actually very similar to what a software development team
-                        could look like:
+                    I manage complex, multi-phased, hospital
+                    renovation projects. My day to day is driving projects
+                    to completion while managing scope, cost, and time 
+                    as well as coordinating and managing a team of 
+                    specialists across a wide array of disciplines.
+                    <br/><br/>
+                    Below is a chart showing what the team for a typical
+                    construction project can look like: 
                     </p>
                 </div>
                 <div className="chart">
                     <img src={pmDiagram}></img>
                 </div>
-            </LargeCard>
 
-            <LargeCard
-                border={false}
-                header={<h4>Ok.. they are similar. Why should I care? Do any skills transfer?</h4>}>
-                <div>
-                    <ul>
-                        <li>Working with and overseeing a multi-specialized team</li>
-                        <li>Navigating relationships with clients, teammates, and people I oversee</li>
-                        <li>Implementing a design, and working with the design team and client to handle any changes</li>
-                        <li>Asking the right questions before something is built to catch avoidable mistakes</li>
-                        <li>We can save the rest for the interview</li>
-                    </ul>
+
+                <div className="content-section">
+                    <h4>Why Is This Relevant?</h4>
+                    <p>
+                    The construction and software world are not so different
+                    when you look at the basic components. Both have a team of specialists
+                    working together to build something.
+                    <br></br><br></br>
+
+                    The chart below demonstrates how similar the 
+                    experience I already have could correlate to 
+                    a software development project. 
+                    </p>
                 </div>
                 <div className="chart">
-                    <img src={pmDiagram}></img>
+                    <img src={sdDiagram}></img>
                 </div>
-            </LargeCard>
+
+                <div className="content-section">
+                    <h4>Do any skills transfer?</h4>
+                    <div className="skills-chart">
+                        <img src={skills}></img>
+                    </div>
+                    <p>
+                        The soft skills I have aquired over my years working in
+                        project management can transfer to any career. Whether I
+                        am working on a team or managing a team, I have learned how
+                        to add value in a way that is best for everyone.
+                    </p>
+
+                </div>
+
 
        </Section>
     )

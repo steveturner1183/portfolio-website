@@ -1,5 +1,4 @@
 .sm-project-card {
-
     background-color: var(--main-dt);
     box-shadow: 0px 0px 15px #7FC6A4;
     border-radius: 25px;
@@ -9,3 +8,21 @@
     margin-bottom: 15%;
 }
 
+.sm-project-card h6 {
+    color: var(--secondary-dt);
+    margin-top: 5%;
+}
+
+.sm-project-card p {
+    margin: 2% 0 2% 0;
+}
+
+.sm-project-card button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-set {
+    padding: 0;
+    margin: 2% 0 2% 0;
+}

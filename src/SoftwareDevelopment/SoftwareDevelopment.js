@@ -1,56 +1,43 @@
 import "./SoftwareDevelopment.css";
-import { lgProjectData } from "./projectData.js";
+import { lgProjectData, smProjectData } from "./projectData.js";
 import Section from "../Layout/Section.js";
-
-import projVid1 from "../assets/videos/MLBreakout.mp4";
 import SectionHeader from "../Layout/SectionHeader";
-import LargeCard from "../Layout/LargeCard";
-import smallData from "./smallProjects.json";
 import SmallProjectCard from "./SmallProjectCard.js";
 import Button from "../Layout/Button.js";
-
-
-
-import un from "../assets/icons/languages/unity.svg";
-
-
 import { useState } from 'react';
 import LargeProject from "./LargeProject";
+import { motion } from "framer-motion";
 
 export default function SoftwareDevelopment() {
-    const [end, setEnd] = useState(6);
+    const [end, setEnd] = useState(3);
     const [buttonDisplay, setDisplay] = useState(true);
-    const maxEnd = smallData.length;
+    const maxEnd = smProjectData.length;
 
     function adjustDisplay() {
         if(end < maxEnd) {
             setEnd(maxEnd);
             setDisplay(false);
         } else {
-            setEnd(6);
+            setEnd(3);
             setDisplay(true);
         }
 
     }
 
     return (
-            <Section>
+            <Section id="software-development">
                 <SectionHeader>
-                    <h3>See my work</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore
-                    </p>
+                    <h3>See What I Have Built</h3>
+
                 </SectionHeader>
                 {lgProjectData.map(data => (
                     <LargeProject data={data}></LargeProject>
                 ))}
                 <SectionHeader><h4>More Projects</h4></SectionHeader>
-                {/*
+                {
                 
                 <div className="sm-project-container">
-                    {smallData.slice(0, end).map(data => (
+                    {smProjectData.slice(0, end).map(data => (
                         <SmallProjectCard
                             title={data.title}
                             description={data.description}
@@ -58,14 +45,14 @@ export default function SoftwareDevelopment() {
                         ></SmallProjectCard>
                     ))}
                 </div>
-                */}
-
-                
-
-                {buttonDisplay && <Button name="Show More" action={adjustDisplay}></Button>}
-                {!buttonDisplay && <Button name="Show Less" action={adjustDisplay}></Button>}
+                }
+                <motion.div 
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.2 }}
+                >
+                    {buttonDisplay && <button className="sd-button" onClick={() => {adjustDisplay()}}>Show More</button>}
+                    {!buttonDisplay && <button className="sd-button" onClick={() => {adjustDisplay()}}>Show Less</button>}
+                </motion.div>
             </Section>
-  
-
     );
 }

@@ -1,7 +1,3 @@
-.hero-text {
-    align-self: start;
-}
-
 .hero-text h3 {
     color: var(--secondary-dt);
 }
@@ -9,6 +5,7 @@
 .hero-text p {
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-right: 10%;
 }
 
 .hero-image {
@@ -16,7 +13,9 @@
 }
 
 .hero-image img {
-    width: 35vw;
+    opacity: .7;
+    border-radius: 5%;
+    width: 30vw;
     min-width: 200px;
 }
 

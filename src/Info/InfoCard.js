@@ -12,7 +12,10 @@ export default function InfoCard(props) {
                     )
                     }
                 </ul>
-                <Button name="Learn More" />
+                <Button 
+                class="fill"
+                name="Learn More" 
+                target={props.target}/>
         </div>
     )
 }

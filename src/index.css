@@ -3,8 +3,9 @@
     --black: #1F271B;
     --main-dt: #023047;
     --secondary-dt: #7FC6A4;
+    --secondary-dt50: rgba(127, 198, 164, .75);
     --contrast-dt: #CCA43B;
-    --light-text-dt: #F2FDFF;
+    --light-text-dt: #CCDAD1;
 
     --blue: #2B70F9;
     --purp: #6719CD;
@@ -18,7 +19,7 @@
 body {
     font-family: "Open Sans";
     color: var(--light-text-dt);
-    margin: 0 8% 0 8%;
+    margin: 5% 0 0 0;
     background-color: var(--main-dt);
 }
 

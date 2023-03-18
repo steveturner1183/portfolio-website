@@ -11,27 +11,73 @@ import py from "../assets/icons/languages/py.svg";
 import un from "../assets/icons/languages/unity.svg";
 
 import MLBreakoutVid from "../assets/videos/MLBreakout.mp4";
+import pmAPI from "../assets/videos/pmAPI.mp4";
+import chess from "../assets/videos/chess.mp4";
 
 export const lgProjectData = [{
     "title": "ML Breakout",
     "description": "Replica of the classic 1976 Atari Breakout. Two player mode opponent is a trained neural network using Unity toolkit ML Agents",
     "technologies": [un, cs],
-    "challenges": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "keywords": ["Team Project", "Machine Learning Tools", "Continous Integration"],
     "video": MLBreakoutVid
 },
 {
-    "title": "Lorem Ipsum 2",
-    "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    "technologies": [py, no],
-    "challenges": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    "video": MLBreakoutVid
+    "title": "Project Management API",
+    "description": "API for project managers to manage tasks by project",
+    "technologies": [js, no, gc],
+    "keywords": ["API/CRUD", "Authorization", "NoSQL", "Testing Suite"],
+    "video": pmAPI
 },
 {
-    "title": "Lorem Ipsum 3",
-    "description": "Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    "technologies": [py, no],
-    "challenges": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    "video": MLBreakoutVid
+    "title": "Chess",
+    "description": "Two player chess game",
+    "technologies": [py],
+    "keywords": ["Object-oriented"],
+    "video": chess
 }
 ];
 
+export const smProjectData = [
+    {
+        "title": "Small Shell",
+        "description": "Shell that implements a subset of features of well-known shells, such as bash",
+        "technologies": [c]
+    },
+
+    {
+        "title": "Pizza Website",
+        "description": "Database management application for fictional pizza restaurant",
+        "technologies": [js, no]
+    },
+
+    {
+        "title": "Assembly Lanaguage",
+        "description": "Several assembly language projects written in MASM for x64",
+        "technologies": []
+    },
+
+    {
+        "title": "Travel Suggestor",
+        "description": "Recommends travel activities based on users past activity",
+        "technologies": [py, fl]
+    },
+
+    {
+        "title": "Client Server Chat",
+        "description": "A chat program between a server and client",
+        "technologies": [py]
+    },
+
+    {
+        "title": "Portfolio website",
+        "description": "This website!",
+        "technologies": [js]
+    },
+
+    {
+        "title": "Restaurant Microservice",
+        "description": "Microservice used by classmates in team project",
+        "technologies": [js]
+    }
+
+]

@@ -7,10 +7,10 @@
     border: solid var(--contrast-dt);
     padding: .5rem 1rem .5rem .5rem;
     border-radius: 25px;
+    cursor:pointer;
 }
 
 .github-link p {
     white-space: nowrap;
-
 }
 

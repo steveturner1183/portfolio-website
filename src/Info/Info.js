@@ -1,37 +1,41 @@
 import "./Info.css";
-import pmIcon from "../assets/icons/hat.svg";
-import sdIcon from "../assets/icons/cpu.svg";
+import pmIcon from "../assets/icons/pm-icon.png";
+import sdIcon from "../assets/icons/sd-icon.png";
 import Section from "../Layout/Section.js"
-import LargeCard from "../Layout/LargeCard";
 import InfoCard from "./InfoCard";
 import SectionHeader from "../Layout/SectionHeader";
  
 export default function Info() {
     return (
-        <Section>
+        <Section id="info">
             <SectionHeader>
-            <h3>Something about my <b>experience</b> being differnt</h3>
+            <h3>Diversify the talent on your team</h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut laboreLorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed
+            You’ve probably looked at the portfolios of many skilled 
+            and talented graduates, so why consider me? In addition 
+            to a strong foundation in computer science, I also bring 
+            the knowledge and skills one can only acquire from 
+            successful completion of real world projects with real
+             world teams.
             </p>
             </SectionHeader>
 
-            <LargeCard>
+            <div className="info-card-container">
                 <InfoCard
                     icon={pmIcon}
                     title="Project Management"
-                    skills= {["SKILL", "SKILL","SKILL","SKILL"]}>
+                    skills= {["Communication", "Scheduling","Leadership","Organization"]}
+                    target="project-management"
+                    >
                 </InfoCard>
                 <InfoCard
                     icon={sdIcon}
                     title="Software Development"
-                    skills= {["SKILL", "SKILL","SKILL","SKILL"]}>
+                    skills= {["Object Oriented", " RESTful API","Problem Solving","SKILL"]}
+                    target="software-development"
+                    >
                 </InfoCard>
-            </LargeCard>
+            </div>
         </Section>
     );
 }
