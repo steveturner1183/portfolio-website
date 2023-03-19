@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.38547866.css",
+    "main.js": "/portfolio-website/static/js/main.ba8bc22c.js",
+    "static/media/pmAPI.mp4": "/portfolio-website/static/media/pmAPI.0a7c68910ea9d06f6847.mp4",
+    "static/media/portrait.png": "/portfolio-website/static/media/portrait.0bccad46ed2cd09fa7dd.png",
+    "static/media/chess.mp4": "/portfolio-website/static/media/chess.97ba8f9b105c78913658.mp4",
+    "static/media/MLBreakout.mp4": "/portfolio-website/static/media/MLBreakout.3a928d584491fb841a5e.mp4",
+    "static/media/skills.png": "/portfolio-website/static/media/skills.78d52e6d259ecc805cd3.png",
+    "static/media/pm-diagram.png": "/portfolio-website/static/media/pm-diagram.0d859ff140c224387e99.png",
+    "static/media/sd-diagram.png": "/portfolio-website/static/media/sd-diagram.3017a617a6a7271c2ac1.png",
+    "static/media/c-sharp.svg": "/portfolio-website/static/media/c-sharp.73800ee44f927d93acbd37a2e4daa289.svg",
+    "static/media/c.svg": "/portfolio-website/static/media/c.249a50bc797ba7c5d781e9c13b6d0954.svg",
+    "static/media/gcloud.svg": "/portfolio-website/static/media/gcloud.52da6d607a870d5c870622a403e9dc04.svg",
+    "static/media/anaconda.svg": "/portfolio-website/static/media/anaconda.75c8fc3a3a243bd12114c7a0881bc3ec.svg",
+    "static/media/unity.svg": "/portfolio-website/static/media/unity.835cf38041d1c244ded9a630a5316752.svg",
+    "static/media/html5.svg": "/portfolio-website/static/media/html5.e05dc519f445e8306881169981936c14.svg",
+    "static/media/py.svg": "/portfolio-website/static/media/py.d32e17a67e47af5af825d688825deb85.svg",
+    "static/media/github.svg": "/portfolio-website/static/media/github.552af9581903d90b391564ff96d3bb02.svg",
+    "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.435e4df5c8324dd2d81394bcf0cc854c.svg",
+    "static/media/js.svg": "/portfolio-website/static/media/js.34cd9860149518f3e4ecc21a4b50efae.svg",
+    "static/media/css3.svg": "/portfolio-website/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "index.html": "/portfolio-website/index.html",
+    "main.38547866.css.map": "/portfolio-website/static/css/main.38547866.css.map",
+    "main.ba8bc22c.js.map": "/portfolio-website/static/js/main.ba8bc22c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38547866.css",
+    "static/js/main.ba8bc22c.js"
+  ]
+}
