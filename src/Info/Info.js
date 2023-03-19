@@ -31,7 +31,7 @@ export default function Info() {
                 <InfoCard
                     icon={sdIcon}
                     title="Software Development"
-                    skills= {["Object Oriented", " RESTful API","Problem Solving","SKILL"]}
+                    skills= {["Object Oriented", "RESTful API","Backend / Frontend","Databases"]}
                     target="software-development"
                     >
                 </InfoCard>

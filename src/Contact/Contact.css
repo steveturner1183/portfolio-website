@@ -13,8 +13,14 @@
     font-family: "Open Sans";
 }
 
+.message-container h3 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
 .contact-greeting {
     align-self: start;
+    text-align: center;
 }
 
 .verification-message {

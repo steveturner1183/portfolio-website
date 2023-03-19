@@ -5,7 +5,7 @@
     padding: 5%;
     text-align: center;
     width: 250px;
-
+    margin-bottom: 10%;
 }
 
 .sm-project-card h6 {
@@ -14,7 +14,7 @@
 }
 
 .sm-project-card p {
-    margin: 2% 0 2% 0;
+    margin: 2% 3%;
 }
 
 .sm-project-card button {
@@ -25,4 +25,8 @@
 .logo-set {
     padding: 0;
     margin: 2% 0 2% 0;
+}
+
+.logo-set img {
+    width: 50px;
 }

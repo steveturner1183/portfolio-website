@@ -7,14 +7,14 @@ export default function LargeProject(props) {
     <div className="lg-project-container">
         <div className="lg-project-header">
             <h3 className="lg-project-title">{props.data.title}</h3>
-            <GithubLink />
+            <GithubLink url={props.data.link}/>
         </div>
 
         <div className="lg-project-content">
             
             <div className="lg-project-video-container">
 
-                <video className="lg-project-vid" autoPlay loop muted>
+                <video className="lg-project-vid" controls playsinline loop muted>
                     <source src={props.data.video} type="video/mp4"></source>
                 </video>
 

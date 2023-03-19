@@ -13,7 +13,7 @@ export default function Info(props) {
                             <img src={logo}></img>
                         ))}
             </ul>
-            <GithubLink></GithubLink>
+            <GithubLink url={props.link}></GithubLink>
         </div>
     )
 }

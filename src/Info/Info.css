@@ -2,5 +2,5 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 10% 0 10%; 
+
 }

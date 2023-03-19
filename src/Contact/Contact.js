@@ -12,17 +12,21 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        emailjs.sendForm('service_mqsi3xj', 'template_xueirxv', form.current, 'm_rpQmXGNlZMfjAY4')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
           setEmailCheck(true);
       };
 
     return (
         
         <Section id="contact">
-            <LargeCard>
-            <div className="contact-greeting">
-                <h3>Please Contact Me</h3>
-            </div>
+
+
 
             <div className="message-container">
             
@@ -32,7 +36,9 @@ export default function Contact() {
                 initial={{ y: 0, opacity: 1 }}
                 exit={{ y:-100, opacity: 0 }}
                 >
+                <h3>Contact Me</h3>
                 <form onSubmit={sendEmail} id="contact-form" className="contact-form" ref={form}>
+
                     <input type="text" className="form-input" placeholder="Name" name="name"/>
                     <input type="email" className="form-input" placeholder="Email" name="email"/>
                     <textarea className="form-input" rows="5" placeholder="Message" name="message"></textarea>
@@ -63,18 +69,6 @@ export default function Contact() {
             </div>
 
 
-            </LargeCard>
         </Section>
     )
 }
-
-/**
- *    
-        emailjs.sendForm('service_mqsi3xj', 'template_xueirxv', form.current, 'm_rpQmXGNlZMfjAY4')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
- */

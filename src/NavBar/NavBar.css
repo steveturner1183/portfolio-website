@@ -38,6 +38,7 @@
     .nav-burger-menu {
         display: block;
         margin-left: auto;
+        padding: 3% 5%;
     }
 
     .burger-nav-links {
@@ -45,7 +46,7 @@
         grid-row: 2;
         list-style: none;
         text-align: end;
-        padding-right: 5%;
+
     }
 
     .nav-links {
