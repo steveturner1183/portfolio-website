@@ -2,10 +2,10 @@ import github from "../assets/icons/github.svg";
 import burger from "../assets/icons/burgerMenu.png";
 import linkedin from "../assets/icons/linkedin.svg";
 import "./NavBar.css";
-import Icon from "../Icon.js";
+import Icon from "./Icon.js";
 import Button from "../Layout/Button.js";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 export default function NavBar() {
     const [menuOpen, setOpen] = useState(false);
@@ -14,6 +14,7 @@ export default function NavBar() {
         <div className="nav-bar">
             <h5 onClick={() => {document.getElementById("hero").scrollIntoView({behavior:"smooth"})}}>Steve Turner</h5>
             
+            {/** Navigation links visible only on desktop **/}
             <ul className="nav-links">
                 <li><Button name="Experience" target="project-management" class="no-fill"></Button></li>
                 <li><Button name="Projects" target="software-development" class="no-fill"></Button></li>
@@ -29,16 +30,15 @@ export default function NavBar() {
                 </li>
             </ul>
 
-
-
-
+            {/** Mobile Fiendly Menu **/}
             <li 
                 onClick={() => {menuOpen ? setOpen(false) : setOpen(true)}}
                 className="nav-burger-menu "
                 >
-                <img src ={burger}></img>
+                <img src ={burger} alt=""></img>
             </li>
 
+            {/** Dropdown menu for mobile friendly **/}
             <AnimatePresence
             initial={{ y: 0, opacity: 1 }}
             exit={{ y:-100, opacity: 0 }}>

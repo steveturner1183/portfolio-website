@@ -18,18 +18,18 @@ export default function Hero() {
                         a new way, with software.
                         <br></br><br></br>
 
-                        For the last two years, I have been pursuing a second degree in Computer Science 
-                        while working full time to make this dream a reality.
+                        For the last two years, I successfully balanced my full time job while pursuing
+                        a second degree in Computer science to make this dream a reality.
                         <br></br><br></br>
-                        I may be new to the industry, but I bring plenty of relevant knowledge
-                        from my seven years of project management experience, and am ready to start my next chapter.
+                        With my fresh perspective on the industry and the relevant knowledge I bring from
+                         my seven years of project management experience, I am driven and prepared to start my next chapter
                         </p>
                         <div className="hero-button">
                         <Button name="Learn More" target="info" class="fill"></Button>
                         </div>
                     </div>
                     <div className="hero-image">
-                        <img src={portrait}></img>
+                        <img src={portrait} alt=""></img>
                     </div>
                 </LargeCard>
             </Section>

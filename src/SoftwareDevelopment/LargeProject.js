@@ -1,5 +1,4 @@
 import "./LargeProject.css";
-import { motion } from "framer-motion";
 import GithubLink from "../Layout/GithubLink";
 
 export default function LargeProject(props) {
@@ -14,7 +13,7 @@ export default function LargeProject(props) {
             
             <div className="lg-project-video-container">
 
-                <video className="lg-project-vid" controls playsinline loop muted>
+                <video className="lg-project-vid" controls playsInline loop muted>
                     <source src={props.data.video} type="video/mp4"></source>
                 </video>
 
@@ -24,15 +23,15 @@ export default function LargeProject(props) {
                 <p>{props.data.description}</p>
                 <h5>Technologies</h5>
                 <ul className="logo-set">
-                    {props.data.technologies.map(logo => (
-                        <img src={logo}></img>
+                    {props.data.technologies.map((logo, index) => (
+                        <img key={index} src={logo} alt=""></img>
                     ))}
                 </ul>
                 <h5>Keywords</h5>
                 <ul className="lg-project-keywords">
-                    {props.data.keywords.map(keyword => (
-                        <p>{keyword}</p>
-                    ))}
+                    {props.data.keywords.map((keyword, index) => (
+                        <p key={index}>{keyword}</p>
+                    ))} 
                 </ul>
 
             </div>

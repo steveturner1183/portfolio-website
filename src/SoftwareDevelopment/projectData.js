@@ -1,10 +1,7 @@
-import ac from "../assets/icons/languages/anaconda.svg";
 import c from "../assets/icons/languages/c.svg";
 import cs from "../assets/icons/languages/c-sharp.svg";
-import css from "../assets/icons/languages/css3.svg";
 import fl from "../assets/icons/languages/flask.png";
 import gc from "../assets/icons/languages/gcloud.svg";
-import ht from "../assets/icons/languages/html5.svg";
 import js from "../assets/icons/languages/js.svg";
 import no from "../assets/icons/languages/node.png";
 import py from "../assets/icons/languages/py.svg";
@@ -60,7 +57,7 @@ export const smProjectData = [
     {
         "title": "Portfolio website",
         "description": "Design and programming of the website you are currently viewing",
-        "technologies": [re, css, figma],
+        "technologies": [re, figma],
         "link": "https://github.com/steveturner1183/portfolio-website"
     },
     {

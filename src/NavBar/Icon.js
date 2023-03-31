@@ -1,5 +1,5 @@
 import "./Icon.css";
-import ButtonAnimation from "./Animation/ButtonAnimation";
+import ButtonAnimation from "../Animation/ButtonAnimation";
 
 export default function Icon(props) {
     return (

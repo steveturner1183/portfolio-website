@@ -11,12 +11,12 @@ export default function Info() {
             <SectionHeader>
             <h3>Diversify the talent on your team</h3>
             <p>
-            You’ve probably looked at the portfolios of many skilled 
-            and talented graduates, so why consider me? In addition 
-            to a strong foundation in computer science, I also bring 
-            the knowledge and skills one can only acquire from 
-            successful completion of real world projects with real
-             world teams.
+            With a vast array of skilled graduates, here’s why you should consider me.
+            In addition to a strong foundation in computer science, I bring applied knowledge and 
+            transferable skills acquired from successful completion of real world projects with real world teams
+            in a different industry. Adding someone with a background different than the standard tech graduate invites
+            growth to your team and its processes.
+            
             </p>
             </SectionHeader>
 

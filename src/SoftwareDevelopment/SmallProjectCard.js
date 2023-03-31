@@ -9,8 +9,8 @@ export default function Info(props) {
             <p>{props.description}</p>
             <h6>Technologies</h6>
             <ul className="logo-set">
-                        {props.technologies.map(logo => (
-                            <img src={logo}></img>
+                        {props.technologies.map((logo, index) => (
+                            <img key={index} src={logo} alt=""></img>
                         ))}
             </ul>
             <GithubLink url={props.link}></GithubLink>

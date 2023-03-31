@@ -1,7 +1,6 @@
 import "./Contact.css";
 import Button from "../Layout/Button";
 import Section from "../Layout/Section";
-import LargeCard from "../Layout/LargeCard"
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
