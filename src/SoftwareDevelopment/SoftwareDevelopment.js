@@ -39,6 +39,7 @@ export default function SoftwareDevelopment() {
                             title={data.title}
                             description={data.description}
                             technologies={data.technologies}
+                            link={data.link}
                         ></SmallProjectCard>
                     ))}
                 </div>
